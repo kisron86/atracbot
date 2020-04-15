@@ -1,0 +1,9 @@
+<launch>
+	
+	<node pkg="omnirobot" type="fuzzybicycle" name="fuzzybicycle" output="screen"> 
+	</node>
+	
+	<node pkg="omnirobot" type="fuzzy" name="fuzzy"> 
+	</node>
+	
+</launch>

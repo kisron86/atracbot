@@ -1,0 +1,4 @@
+/home/core/catkin_ws/src/omnirobot/src/stm32/build/CMakeFiles/edit_cache.dir
+/home/core/catkin_ws/src/omnirobot/src/stm32/build/CMakeFiles/rebuild_cache.dir
+/home/core/catkin_ws/src/omnirobot/src/stm32/build/CMakeFiles/flash.dir
+/home/core/catkin_ws/src/omnirobot/src/stm32/build/CMakeFiles/FreeRTOS.elf.dir

@@ -1,0 +1,17 @@
+1. sudo apt-get install git
+2. git config --global user.name "kisron86"
+3. git config --global user.email kisron86@gmail.com
+4. git config --list
+
+pada folder yang akan diupload
+5. git init
+6. git add .
+7. git commit -m "first commit"
+8. git remote add origin git@github.com:UserNameGit/NamaRepository.git
+9. git push -u origin master
+
+
+setelah di config
+git add .
+git commit -m "comment"
+git push origin master

@@ -1,0 +1,15 @@
+1. Install Ubuntu 18.04 LTS, Update, Upgrade
+2. Install Chrome
+3. Install ROS, Create Workspace
+4. Install Qt
+5. Install sql phpmyadmin apache2
+6. Clone repository catkin_workspace
+
+
+http://wjwwood.io/serial/
+
+Install telepot
+
+pip3 install mysql-connector-python-rf
+
+Install catkin tools

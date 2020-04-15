@@ -1,0 +1,4 @@
+<launch>
+        <node pkg="telegram" type="publisher.py" name="publisher" output="screen"></node>
+        <node pkg="telegram" type="subscriber.py" name="subscriber" output="screen"></node>
+</launch>

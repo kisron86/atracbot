@@ -1,0 +1,497 @@
+The system is: Linux - 4.13.0-26-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1885d/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_1885d.dir/build.make CMakeFiles/cmTC_1885d.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1885d.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1885d.dir/testCCompiler.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_1885d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1885d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_1885d.dir/testCCompiler.c.o  -o cmTC_1885d -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_31482/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_31482.dir/build.make CMakeFiles/cmTC_31482.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_31482
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31482.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o  -o cmTC_31482 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.5' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_31482' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccq7jqSp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_31482 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_31482/fast"]
+  ignore line: [make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_31482.dir/build.make CMakeFiles/cmTC_31482.dir/build]
+  ignore line: [make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_31482]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31482.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o  -o cmTC_31482 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.5' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_31482' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccq7jqSp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_31482 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccq7jqSp.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_31482] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTC_31482.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65236/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_65236.dir/build.make CMakeFiles/cmTC_65236.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65236.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_65236.dir/feature_tests.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/feature_tests.c
+Linking C executable cmTC_65236
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65236.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_65236.dir/feature_tests.c.o  -o cmTC_65236 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1c302/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_1c302.dir/build.make CMakeFiles/cmTC_1c302.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c302.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_1c302.dir/feature_tests.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1c302
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c302.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_1c302.dir/feature_tests.c.o  -o cmTC_1c302 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2d3a7/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2d3a7.dir/build.make CMakeFiles/cmTC_2d3a7.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d3a7.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_2d3a7.dir/feature_tests.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2d3a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d3a7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2d3a7.dir/feature_tests.c.o  -o cmTC_2d3a7 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test C_SUPPORTS_STD_GNU99 succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d5b2/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7d5b2.dir/build.make CMakeFiles/cmTC_7d5b2.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d5b2.dir/src.c.o
+/usr/bin/cc    -DC_SUPPORTS_STD_GNU99   -std=gnu99 -o CMakeFiles/cmTC_7d5b2.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7d5b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d5b2.dir/link.txt --verbose=1
+/usr/bin/cc   -DC_SUPPORTS_STD_GNU99    CMakeFiles/cmTC_7d5b2.dir/src.c.o  -o cmTC_7d5b2 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WALL succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70dc7/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_70dc7.dir/build.make CMakeFiles/cmTC_70dc7.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70dc7.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -DC_SUPPORTS_WALL   -Wall -o CMakeFiles/cmTC_70dc7.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_70dc7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70dc7.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -DC_SUPPORTS_WALL    CMakeFiles/cmTC_70dc7.dir/src.c.o  -o cmTC_70dc7 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WEXTRA succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2333/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c2333.dir/build.make CMakeFiles/cmTC_c2333.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2333.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -DC_SUPPORTS_WEXTRA   -Wextra -o CMakeFiles/cmTC_c2333.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c2333
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2333.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -DC_SUPPORTS_WEXTRA    CMakeFiles/cmTC_c2333.dir/src.c.o  -o cmTC_c2333 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WSHADOW succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fc631/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fc631.dir/build.make CMakeFiles/cmTC_fc631.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc631.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -DC_SUPPORTS_WSHADOW   -Wshadow -o CMakeFiles/cmTC_fc631.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fc631
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc631.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -DC_SUPPORTS_WSHADOW    CMakeFiles/cmTC_fc631.dir/src.c.o  -o cmTC_fc631 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_D_FORTIFY_SOURCE_2 succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bdff/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5bdff.dir/build.make CMakeFiles/cmTC_5bdff.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bdff.dir/src.c.o
+/usr/bin/cc  -D_FORTIFY_SOURCE=2  -std=gnu99 -Wall -Wextra -Wshadow -DC_SUPPORTS_D_FORTIFY_SOURCE_2   -o CMakeFiles/cmTC_5bdff.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5bdff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bdff.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -DC_SUPPORTS_D_FORTIFY_SOURCE_2    CMakeFiles/cmTC_5bdff.dir/src.c.o  -o cmTC_5bdff -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FSTRICT_ALIASING succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30eda/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_30eda.dir/build.make CMakeFiles/cmTC_30eda.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30eda.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -DC_SUPPORTS_FSTRICT_ALIASING   -fstrict-aliasing -o CMakeFiles/cmTC_30eda.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_30eda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30eda.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -DC_SUPPORTS_FSTRICT_ALIASING    CMakeFiles/cmTC_30eda.dir/src.c.o  -o cmTC_30eda -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WUNDEF succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77350/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_77350.dir/build.make CMakeFiles/cmTC_77350.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77350.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -DC_SUPPORTS_WUNDEF   -Wundef -o CMakeFiles/cmTC_77350.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_77350
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77350.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -DC_SUPPORTS_WUNDEF    CMakeFiles/cmTC_77350.dir/src.c.o  -o cmTC_77350 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WFORMAT succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_67efe/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_67efe.dir/build.make CMakeFiles/cmTC_67efe.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67efe.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -DC_SUPPORTS_WFORMAT   -Wformat -o CMakeFiles/cmTC_67efe.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_67efe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67efe.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -DC_SUPPORTS_WFORMAT    CMakeFiles/cmTC_67efe.dir/src.c.o  -o cmTC_67efe -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WFORMAT_SECURITY succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60eda/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_60eda.dir/build.make CMakeFiles/cmTC_60eda.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60eda.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -DC_SUPPORTS_WFORMAT_SECURITY   -Wformat-security -o CMakeFiles/cmTC_60eda.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_60eda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60eda.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -DC_SUPPORTS_WFORMAT_SECURITY    CMakeFiles/cmTC_60eda.dir/src.c.o  -o cmTC_60eda -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WMAYBE_UNINITIALIZED succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bbb1d/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bbb1d.dir/build.make CMakeFiles/cmTC_bbb1d.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bbb1d.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -DC_SUPPORTS_WMAYBE_UNINITIALIZED   -Wmaybe-uninitialized -o CMakeFiles/cmTC_bbb1d.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bbb1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbb1d.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -DC_SUPPORTS_WMAYBE_UNINITIALIZED    CMakeFiles/cmTC_bbb1d.dir/src.c.o  -o cmTC_bbb1d -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fede3/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fede3.dir/build.make CMakeFiles/cmTC_fede3.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fede3.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION   -Wimplicit-function-declaration -o CMakeFiles/cmTC_fede3.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fede3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fede3.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION    CMakeFiles/cmTC_fede3.dir/src.c.o  -o cmTC_fede3 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WREDUNDANT_DECLS succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_41bf4/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_41bf4.dir/build.make CMakeFiles/cmTC_41bf4.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41bf4.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -DC_SUPPORTS_WREDUNDANT_DECLS   -Wredundant-decls -o CMakeFiles/cmTC_41bf4.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_41bf4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41bf4.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -DC_SUPPORTS_WREDUNDANT_DECLS    CMakeFiles/cmTC_41bf4.dir/src.c.o  -o cmTC_41bf4 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_722ae/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_722ae.dir/build.make CMakeFiles/cmTC_722ae.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_722ae.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -DC_SUPPORTS_FPIC   -fPIC -o CMakeFiles/cmTC_722ae.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_722ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_722ae.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -DC_SUPPORTS_FPIC    CMakeFiles/cmTC_722ae.dir/src.c.o  -o cmTC_722ae -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_O2 succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_52aca/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_52aca.dir/build.make CMakeFiles/cmTC_52aca.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52aca.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -DC_SUPPORTS_O2   -O2 -o CMakeFiles/cmTC_52aca.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_52aca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52aca.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -DC_SUPPORTS_O2    CMakeFiles/cmTC_52aca.dir/src.c.o  -o cmTC_52aca -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR succeeded with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da83a/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_da83a.dir/build.make CMakeFiles/cmTC_da83a.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da83a.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -DC_SUPPORTS_WERROR   -Werror -o CMakeFiles/cmTC_da83a.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_da83a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da83a.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -DC_SUPPORTS_WERROR    CMakeFiles/cmTC_da83a.dir/src.c.o  -o cmTC_da83a -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_887f5/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_887f5.dir/build.make CMakeFiles/cmTC_887f5.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_887f5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -Werror    -o CMakeFiles/cmTC_887f5.dir/CheckIncludeFile.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_887f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_887f5.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -Werror     CMakeFiles/cmTC_887f5.dir/CheckIncludeFile.c.o  -o cmTC_887f5 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60127/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_60127.dir/build.make CMakeFiles/cmTC_60127.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60127.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -Werror    -o CMakeFiles/cmTC_60127.dir/CheckIncludeFile.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_60127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60127.dir/link.txt --verbose=1
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -O2 -Werror     CMakeFiles/cmTC_60127.dir/CheckIncludeFile.c.o  -o cmTC_60127 -rdynamic 
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+

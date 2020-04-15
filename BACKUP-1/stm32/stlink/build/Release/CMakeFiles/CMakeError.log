@@ -1,0 +1,38 @@
+Performing C SOURCE FILE Test C_SUPPORTS_WMISSING_VARIABLE_DECLARATIONS failed with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55412/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_55412.dir/build.make CMakeFiles/cmTC_55412.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55412.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WMISSING_VARIABLE_DECLARATIONS   -Wmissing-variable-declarations -o CMakeFiles/cmTC_55412.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wmissing-variable-declarations'
+CMakeFiles/cmTC_55412.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_55412.dir/src.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_55412.dir/src.c.o] Error 1
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_55412/fast' failed
+make[1]: *** [cmTC_55412/fast] Error 2
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WSHORTEN_64_TO_32 failed with the following output:
+Change Dir: /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8e520/fast"
+make[1]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8e520.dir/build.make CMakeFiles/cmTC_8e520.dir/build
+make[2]: Entering directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e520.dir/src.c.o
+/usr/bin/cc    -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WSHORTEN_64_TO_32   -Wshorten-64-to-32 -o CMakeFiles/cmTC_8e520.dir/src.c.o   -c /home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_8e520.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8e520.dir/src.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_8e520.dir/src.c.o] Error 1
+make[2]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8e520/fast' failed
+make[1]: *** [cmTC_8e520/fast] Error 2
+make[1]: Leaving directory '/home/core/catkin_ws/src/omnirobot/src/stm32/stlink/build/Release/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
