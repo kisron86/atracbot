@@ -1,29 +1,27 @@
 #include <ros/ros.h>
+
 #include <my_roscpp_library/stereofunction.h>
 #include <my_roscpp_library/stereograb.h>
+
+#include <opencv2/core/core.hpp>
+#include <opencv2/core/types_c.h> //cxtypes.h
 //#include "stdafx.h"
 #include <opencv2/opencv.hpp>
 #include "opencv2/calib3d/calib3d.hpp"
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-//#include <opencv2/contrib/contrib.hpp>
-#include <opencv2/core/core.hpp>
-#include <opencv2/core/types_c.h> //cxtypes.h
+#include <opencv2/contrib/contrib.hpp>
+
 #include <stdio.h>
 #include <iomanip>
 #include "math.h"
 #include <stdio.h>
 #include <string.h>
+#include <string>
 
+using namespace std;
+using namespace cv;
 
-#if defined(_MSC_VER)
-#include <tchar.h>
-#include <strsafe.h>
-#include <windows.h>
-#pragma comment(lib, "Ws2_32.lib")
-#elif defined(__GNUC__) || defined(__GNUG__)
-#include <dirent.h>
-#endif
 
 string window_name = "Deteksi Manusia";
 //VideoCapture cap(0);
@@ -211,9 +209,8 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
 
     printf("\nRunning stereo calibration ...");
     fflush(stdout);
-    cvStereoCalibrate( &_objectPoints, &_imagePoints1, &_imagePoints2, &_npoints,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
-    cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5),
-        CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST + CV_CALIB_SAME_FOCAL_LENGTH );
+    calibrateCamera( &_objectPoints, &_imagePoints1, &_imagePoints2, &_npoints,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
+    cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5), CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST + CV_CALIB_SAME_FOCAL_LENGTH );
 
 
     printf("\nDone Calibration");

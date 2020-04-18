@@ -13,14 +13,14 @@ catkin_package(
   CATKIN_DEPENDS roscpp
 #  DEPENDS other non-ROS libs
 )
-
+SET(OpenCV_DIR /home/kisron/installation/OpenCV-3.4/share/OpenCV/)
 include_directories(include ${catkin_INCLUDE_DIRS}) 
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_library(${PROJECT_NAME}
   src/my_super_roscpp_library.cpp
   src/my_hog.cpp
-  src/stereograb.cpp
+  #src/stereograb.cpp
   src/stereofunction.cpp
 )
 

@@ -133,6 +133,10 @@ my_roscpp_library/stereofunction.h
 -
 my_roscpp_library/stereograb.h
 -
+opencv2/core/core.hpp
+-
+opencv2/core/types_c.h
+-
 opencv2/opencv.hpp
 -
 opencv2/calib3d/calib3d.hpp
@@ -141,9 +145,7 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/highgui/highgui.hpp
 -
-opencv2/core/core.hpp
--
-opencv2/core/types_c.h
+opencv2/contrib/contrib.hpp
 -
 stdio.h
 -
@@ -155,18 +157,8 @@ stdio.h
 -
 string.h
 -
-tchar.h
+string
 -
-strsafe.h
--
-windows.h
--
-dirent.h
--
-
-/home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp
-my_roscpp_library/stereograb.h
-/home/kisron/catkin_workspace/src/my_roscpp_library/src/my_roscpp_library/stereograb.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

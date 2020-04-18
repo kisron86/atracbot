@@ -105,33 +105,9 @@ my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o.provides: my
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o.provides.build: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o
 
 
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/flags.make
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o: /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kisron/catkin_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o"
-	cd /home/kisron/catkin_workspace/build/my_roscpp_library && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o -c /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp
-
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.i"
-	cd /home/kisron/catkin_workspace/build/my_roscpp_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp > CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.i
-
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.s"
-	cd /home/kisron/catkin_workspace/build/my_roscpp_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp -o CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.s
-
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.requires:
-
-.PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.requires
-
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.provides: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.requires
-	$(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.provides.build
-.PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.provides
-
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.provides.build: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o
-
-
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/flags.make
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o: /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereofunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kisron/catkin_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kisron/catkin_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o"
 	cd /home/kisron/catkin_workspace/build/my_roscpp_library && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o -c /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereofunction.cpp
 
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.i: cmake_force
@@ -157,7 +133,6 @@ my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o.prov
 my_roscpp_library_OBJECTS = \
 "CMakeFiles/my_roscpp_library.dir/src/my_super_roscpp_library.cpp.o" \
 "CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o" \
-"CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o" \
 "CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o"
 
 # External object files for target my_roscpp_library
@@ -165,7 +140,6 @@ my_roscpp_library_EXTERNAL_OBJECTS =
 
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_super_roscpp_library.cpp.o
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o
-/home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: /opt/ros/melodic/lib/libroscpp.so
@@ -228,7 +202,7 @@ my_roscpp_library_EXTERNAL_OBJECTS =
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
 /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kisron/catkin_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kisron/catkin_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/kisron/catkin_workspace/devel/lib/libmy_roscpp_library.so"
 	cd /home/kisron/catkin_workspace/build/my_roscpp_library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_roscpp_library.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -238,7 +212,6 @@ my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build: /home/kisron/catkin_wo
 
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/requires: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_super_roscpp_library.cpp.o.requires
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/requires: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o.requires
-my_roscpp_library/CMakeFiles/my_roscpp_library.dir/requires: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o.requires
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/requires: my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o.requires
 
 .PHONY : my_roscpp_library/CMakeFiles/my_roscpp_library.dir/requires
