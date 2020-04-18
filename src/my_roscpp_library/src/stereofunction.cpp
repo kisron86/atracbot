@@ -3,28 +3,16 @@
 #include <my_roscpp_library/stereofunction.h>
 #include <my_roscpp_library/stereograb.h>
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/core/types_c.h> //cxtypes.h
-//#include "stdafx.h"
-#include <opencv2/opencv.hpp>
-#include "opencv2/calib3d/calib3d.hpp"
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/contrib/contrib.hpp>
-
-#include <stdio.h>
-#include <iomanip>
-#include "math.h"
-#include <stdio.h>
-#include <string.h>
-#include <string>
-
-using namespace std;
-using namespace cv;
-
+#if defined(_MSC_VER)
+#include <tchar.h>
+#include <strsafe.h>
+#include <windows.h>
+#pragma comment(lib, "Ws2_32.lib")
+#elif defined(__GNUC__) || defined(__GNUG__)
+#include <dirent.h>
+#endif
 
 string window_name = "Deteksi Manusia";
-//VideoCapture cap(0);
 
 std::string cascadeName = "bismillah20.xml";
 cv::CascadeClassifier cascade;
@@ -93,6 +81,7 @@ void StereoFunction::stereoInit(StereoGrab* grabb)
 
     pair = cvCreateMat( imageSize.height, imageSize.width*2,CV_8UC3 );
 }
+
 void StereoFunction::stereoCalibration(StereoGrab* grabb){
 
   int  nx=11, ny=7, frame = 0, n_boards =30, N;
@@ -105,7 +94,7 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
 
   int i, j, n = nx*ny, N1 = 0, N2 = 0;
 
-    vector<CvPoint2D32f> points[2];
+  vector<CvPoint2D32f> points[2];
   vector<int> npoints;
   vector<CvPoint3D32f> objectPoints;
   vector<CvPoint2D32f> temp1(n);
@@ -209,8 +198,8 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
 
     printf("\nRunning stereo calibration ...");
     fflush(stdout);
-    calibrateCamera( &_objectPoints, &_imagePoints1, &_imagePoints2, &_npoints,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
-    cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5), CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST + CV_CALIB_SAME_FOCAL_LENGTH );
+    StereoCalibrate( &_objectPoints, &_imagePoints1, &_imagePoints2,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
+    cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5),CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST+CV_CALIB_SAME_FOCAL_LENGTH );
 
 
     printf("\nDone Calibration");
@@ -252,136 +241,4 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
       cvSave("CalibFile//my1.yml",my1calib);
       cvSave("CalibFile//mx2.yml",mx2calib);
       cvSave("CalibFile//my2.yml",my2calib);
-}
-
-void StereoFunction::stereoCorrelation(StereoGrab* grabb){
-
-  int SADWindowSize = 0;
-  StereoSGBM sgbm;
-  int cn = cvarrToMat(img1r).channels();
-
-  sgbm.preFilterCap = stereoPreFilterCap;//63; //stereoPreFilterSize;
-  sgbm.SADWindowSize = stereoDispWindowSize;//3; //stereoDispWindowSize;
-  sgbm.P1 = 8*cn*sgbm.SADWindowSize*sgbm.SADWindowSize;
-  sgbm.P2 = 32*cn*sgbm.SADWindowSize*sgbm.SADWindowSize;
-  sgbm.minDisparity =10;// -39; //0
-  sgbm.numberOfDisparities =  stereoNumDisparities; //144;
-  sgbm.uniquenessRatio =  stereoDispUniquenessRatio; //10;
-  sgbm.speckleWindowSize = 200; //200
-  sgbm.speckleRange = 32;		//32
-  sgbm.disp12MaxDiff = 1;		//2
-
-  cvSplit(grabb->imageLeft,r_detect,g_detect,b_detect, NULL);
-  cvRemap( r_detect, r_detect_r, mx1, my1 ); // Undistort image
-  cvRemap( g_detect, g_detect_r, mx1, my1 ); // Undistort image
-  cvRemap( b_detect, b_detect_r, mx1, my1 ); // Undistort image
-  cvMerge( r_detect_r, g_detect_r, b_detect_r, NULL, img_detect);
-
-
-  IplImage* eq_gray = cvCreateImage(cvGetSize(img1), 8, 1);
-
-  CvHistogram *hist;
-  int hist_size = 256;
-  float range[] = { 0, 256 };
-  float* ranges[] = { range };
-
-  float max_value = 0.0;
-  float w_scale = 0.0;
-
-  /* Convert the image to gray */
-  cvCvtColor(grabb->imageLeft, img1, CV_RGB2GRAY);
-  cvCvtColor(grabb->imageRight, img2, CV_RGB2GRAY);
-
-  //rectification
-  cvRemap( img1, img1r, mx1, my1);
-  cvRemap( img2, img2r, mx2, my2);
-  sgbm(cvarrToMat(img1r), cvarrToMat(img2r), cvarrToMat(disp));
-  cvNormalize( disp, vdisp, 0, 256, CV_MINMAX );
-
-  //view data
-    cvNamedWindow( "Rectified", 1);
-    //cvNamedWindow( "Disparity Map",1 );
-    //membuat line
-    CvMat part;
-    cvGetCols( pair, &part, 0, imageSize.width );
-    cvCvtColor( img1r, &part, CV_GRAY2BGR );
-    cvGetCols( pair, &part, imageSize.width, imageSize.width*2 );
-    cvCvtColor( img2r, &part, CV_GRAY2BGR );
-    for( int j = 0; j < imageSize.height; j += 16 )
-    cvLine( pair, cvPoint(0,j), cvPoint(imageSize.width*2,j),CV_RGB(0,255,0));
-    //ending line
-
-    //cvLine(vdisp, cvPoint(0, 120), cvPoint(320,120), CV_RGB(255, 0, 0)); //horizontal
-    //cvLine(vdisp, cvPoint(160, 0), cvPoint(160, 240), CV_RGB(255, 0, 0));// vertical
-
-    Mat dst = Mat(vdisp, true);
-    //imshow("tes", dst);
-    cvShowImage("Rectified", pair);
-    cvShowImage("Disparity Map", vdisp);
-
-
-    //jarak
-    stereoSavePointCloud();
-}
-
-void PointCenter(cv::Point center) {
-  //cout << "Center: " << center << endl;
-  p_center = center;
-}
-
-void StereoFunction::stereoSavePointCloud()
-{
-  Mat zeroMat = zeroMat.zeros(450, 320, CV_8UC1);
-    //0: fx(pixel), 1: fy(pixel), 2: base line (pixel), 3: f(mm), 4: sensor element size, 5: baseline (mm)
-  double	focal = 4.2; //mm reprojectionVars[0]; //4.2126730429010615
-  double	baseline = 30;
-  double 	depth = 0;
-
-  double vk[10] = { 2.420168, 3.638989, 4.881356, 5.843478, 6.631579, 7.730909, 7.773846, 8.365145, 8.470588, 9.960000 };
-  double jk[10]= {50, 100, 150, 200, 250, 300, 350, 400, 450, 500};
-  double j1=0, j2=0;
-  double v1=0, v2=0;
-  double jarak;
-
-  real_disparity= cvCreateImage( imageSize, IPL_DEPTH_32F, 1 );
-  cvConvertScale( disp, real_disparity, 1.0/16, 0 );
-  // min 1.27 29 cm
-  // max 8.16 400 cm
-  if (p_center.x >= 320) p_center.x = 319;
-  if (p_center.y >= 240) p_center.y = 239;
-  if (p_center.x <= 0) p_center.x = 1;
-  if (p_center.y <= 0) p_center.y = 1;
-  //cout << "(" << p_center.x << " x " << p_center.y << ") => ";
-
-  depth = (double)((baseline*focal)/((double)(cvGet2D(disp, p_center.y, p_center.x).val[0]/16))); // (y,x)
-  //printf("%f\n",depth);
-
-  //vk depth kalibrasi
-  //jk cm
-  int ok=1;
-  for(int i=0; i<10; i++){
-    if(depth>=vk[i] && depth<vk[i+1]){
-      v1 = vk[i+1]-vk[i]; //ZCn+1 -ZCn depth kalib
-      j1 = jk[i+1]-jk[i];	//ZCn+1 -ZCn cm kalib
-
-      v2=depth-vk[i];  //Z-ZRn
-      j2 = j1*v2/v1;		//j1 cm
-      j2 = j2 + jk[i];   //konversi cm
-      ok=1;
-      break;
-    }
-  }
-  if(ok==1){
-    //printf("%f__jarak: %f => ",depth,j2);
-    //cout << "depth: " << depth << " => " << "jarak:  " << j2 << " => ";
-    float phyta_dist = 0.0;
-    phyta_dist = sqrt(pow(j2, 2) - pow(60, 2));
-    meas_dist = phyta_dist;
-    //cout << "j2: " << j2 << " phyta: " << phyta_dist << " ";
-  }
-
-}
-
-void meas_distance(vector<float>& distance) {
-  distance.push_back(meas_dist);
 }

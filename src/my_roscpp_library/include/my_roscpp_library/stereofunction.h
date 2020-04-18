@@ -29,6 +29,7 @@
 #include <vector>
 
 using namespace std;
+using namespace cv;
 
 void PointCenter(cv::Point center);
 void meas_distance(vector<float>& distance);
@@ -79,5 +80,4 @@ struct StereoFunction{
 
   int fileNO, threshold, blobArea;
 };
-
 #endif // STEREOFUNCTION_H

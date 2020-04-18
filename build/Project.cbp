@@ -4308,6 +4308,9 @@
 		<Unit filename="/home/kisron/catkin_workspace/src/my_roscpp_library/src/my_super_roscpp_library.cpp">
 			<Option target="my_roscpp_library"/>
 		</Unit>
+		<Unit filename="/home/kisron/catkin_workspace/src/my_roscpp_library/src/stereofunction.cpp">
+			<Option target="my_roscpp_library"/>
+		</Unit>
 		<Unit filename="/home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp">
 			<Option target="my_roscpp_library"/>
 		</Unit>

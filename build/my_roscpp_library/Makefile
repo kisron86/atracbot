@@ -263,6 +263,33 @@ src/stereofunction.cpp.s:
 	cd /home/kisron/catkin_workspace/build && $(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.s
 .PHONY : src/stereofunction.cpp.s
 
+src/stereograb.o: src/stereograb.cpp.o
+
+.PHONY : src/stereograb.o
+
+# target to build an object file
+src/stereograb.cpp.o:
+	cd /home/kisron/catkin_workspace/build && $(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o
+.PHONY : src/stereograb.cpp.o
+
+src/stereograb.i: src/stereograb.cpp.i
+
+.PHONY : src/stereograb.i
+
+# target to preprocess a source file
+src/stereograb.cpp.i:
+	cd /home/kisron/catkin_workspace/build && $(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.i
+.PHONY : src/stereograb.cpp.i
+
+src/stereograb.s: src/stereograb.cpp.s
+
+.PHONY : src/stereograb.s
+
+# target to generate assembly for a file
+src/stereograb.cpp.s:
+	cd /home/kisron/catkin_workspace/build && $(MAKE) -f my_roscpp_library/CMakeFiles/my_roscpp_library.dir/build.make my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.s
+.PHONY : src/stereograb.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,6 +313,9 @@ help:
 	@echo "... src/stereofunction.o"
 	@echo "... src/stereofunction.i"
 	@echo "... src/stereofunction.s"
+	@echo "... src/stereograb.o"
+	@echo "... src/stereograb.i"
+	@echo "... src/stereograb.s"
 .PHONY : help
 
 

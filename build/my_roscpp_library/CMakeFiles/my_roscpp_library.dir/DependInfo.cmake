@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/kisron/catkin_workspace/src/my_roscpp_library/src/my_hog.cpp" "/home/kisron/catkin_workspace/build/my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_hog.cpp.o"
   "/home/kisron/catkin_workspace/src/my_roscpp_library/src/my_super_roscpp_library.cpp" "/home/kisron/catkin_workspace/build/my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/my_super_roscpp_library.cpp.o"
   "/home/kisron/catkin_workspace/src/my_roscpp_library/src/stereofunction.cpp" "/home/kisron/catkin_workspace/build/my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o"
+  "/home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp" "/home/kisron/catkin_workspace/build/my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

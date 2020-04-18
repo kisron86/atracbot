@@ -182,3 +182,6 @@ my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o: /op
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereofunction.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 
+my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o: /home/kisron/catkin_workspace/src/my_roscpp_library/include/my_roscpp_library/stereograb.h
+my_roscpp_library/CMakeFiles/my_roscpp_library.dir/src/stereograb.cpp.o: /home/kisron/catkin_workspace/src/my_roscpp_library/src/stereograb.cpp
+
