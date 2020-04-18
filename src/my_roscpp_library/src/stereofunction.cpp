@@ -198,8 +198,9 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
 
     printf("\nRunning stereo calibration ...");
     fflush(stdout);
-    StereoCalibrate( &_objectPoints, &_imagePoints1, &_imagePoints2,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
-    cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5),CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST+CV_CALIB_SAME_FOCAL_LENGTH );
+    cvStereoCalibrate( &_objectPoints, &_imagePoints1, &_imagePoints2, &_npoints,&_M1calib, &_D1, &_M2calib, &_D2,imageSize, &_R, &_Tcalib, &_E, &_F,
+        cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 100, 1e-5),
+            CV_CALIB_FIX_ASPECT_RATIO+CV_CALIB_ZERO_TANGENT_DIST + CV_CALIB_SAME_FOCAL_LENGTH );
 
 
     printf("\nDone Calibration");
