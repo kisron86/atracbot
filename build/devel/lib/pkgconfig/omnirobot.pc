@@ -1,8 +1,0 @@
-prefix=/home/kisron/catkin_workspace/build/devel
-
-Name: omnirobot
-Description: Description of omnirobot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

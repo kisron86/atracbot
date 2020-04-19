@@ -1,8 +1,0 @@
-prefix=/home/kisron/catkin_workspace/build/devel
-
-Name: rosserial_arduino
-Description: Description of rosserial_arduino
-Version: 0.8.0
-Cflags: -I/home/kisron/catkin_workspace/build/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

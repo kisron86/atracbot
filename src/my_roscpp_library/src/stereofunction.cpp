@@ -243,3 +243,73 @@ void StereoFunction::stereoCalibration(StereoGrab* grabb){
       cvSave("CalibFile//mx2.yml",mx2calib);
       cvSave("CalibFile//my2.yml",my2calib);
 }
+
+void StereoFunction::stereoCorrelation(StereoGrab* grabb){
+
+  //int SADWindowSize = 0;
+  cv::StereoSGBM sgbm;
+  int cn = cvarrToMat(img1r).channels();
+
+  sgbm.preFilterCap = stereoPreFilterCap;//63; //stereoPreFilterSize;
+  sgbm.SADWindowSize = stereoDispWindowSize;//3; //stereoDispWindowSize;
+  sgbm.P1 = 8*cn*sgbm.SADWindowSize*sgbm.SADWindowSize;
+  sgbm.P2 = 32*cn*sgbm.SADWindowSize*sgbm.SADWindowSize;
+  sgbm.minDisparity =10;// -39; //0
+  sgbm.numberOfDisparities =  stereoNumDisparities; //144;
+  sgbm.uniquenessRatio =  stereoDispUniquenessRatio; //10;
+  sgbm.speckleWindowSize = 200; //200
+  sgbm.speckleRange = 32;		//32
+  sgbm.disp12MaxDiff = 1;		//2
+
+  cvSplit(grabb->imageLeft,r_detect,g_detect,b_detect, NULL);
+  cvRemap( r_detect, r_detect_r, mx1, my1 ); // Undistort image
+  cvRemap( g_detect, g_detect_r, mx1, my1 ); // Undistort image
+  cvRemap( b_detect, b_detect_r, mx1, my1 ); // Undistort image
+  cvMerge( r_detect_r, g_detect_r, b_detect_r, NULL, img_detect);
+
+
+  IplImage* eq_gray = cvCreateImage(cvGetSize(img1), 8, 1);
+
+  CvHistogram *hist;
+  int hist_size = 256;
+  float range[] = { 0, 256 };
+  float* ranges[] = { range };
+
+  float max_value = 0.0;
+  float w_scale = 0.0;
+
+  /* Convert the image to gray */
+  cvCvtColor(grabb->imageLeft, img1, CV_RGB2GRAY);
+  cvCvtColor(grabb->imageRight, img2, CV_RGB2GRAY);
+
+  //rectification
+  cvRemap( img1, img1r, mx1, my1);
+  cvRemap( img2, img2r, mx2, my2);
+  sgbm(cvarrToMat(img1r), cvarrToMat(img2r), cvarrToMat(disp));
+  cvNormalize( disp, vdisp, 0, 256, CV_MINMAX );
+
+  //view data
+    cvNamedWindow( "Rectified", 1);
+    //cvNamedWindow( "Disparity Map",1 );
+    //membuat line
+    CvMat part;
+    cvGetCols( pair, &part, 0, imageSize.width );
+    cvCvtColor( img1r, &part, CV_GRAY2BGR );
+    cvGetCols( pair, &part, imageSize.width, imageSize.width*2 );
+    cvCvtColor( img2r, &part, CV_GRAY2BGR );
+    for( int j = 0; j < imageSize.height; j += 16 )
+    cvLine( pair, cvPoint(0,j), cvPoint(imageSize.width*2,j),CV_RGB(0,255,0));
+    //ending line
+
+    //cvLine(vdisp, cvPoint(0, 120), cvPoint(320,120), CV_RGB(255, 0, 0)); //horizontal
+    //cvLine(vdisp, cvPoint(160, 0), cvPoint(160, 240), CV_RGB(255, 0, 0));// vertical
+
+    Mat dst = Mat(vdisp, true);
+    //imshow("tes", dst);
+    cvShowImage("Rectified", pair);
+    cvShowImage("Disparity Map", vdisp);
+
+
+    //jarak
+    stereoSavePointCloud();
+}

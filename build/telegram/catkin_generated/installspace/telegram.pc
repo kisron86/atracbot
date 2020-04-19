@@ -1,8 +1,0 @@
-prefix=/home/kisron/catkin_workspace/install
-
-Name: telegram
-Description: Description of telegram
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

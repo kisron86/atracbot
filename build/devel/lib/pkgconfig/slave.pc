@@ -1,8 +1,0 @@
-prefix=/home/kisron/catkin_workspace/build/devel
-
-Name: slave
-Description: Description of slave
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: std_msgs

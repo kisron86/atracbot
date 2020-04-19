@@ -4,7 +4,6 @@ project(my_roscpp_library)
 find_package(catkin REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  OpenCV
 )
 
 catkin_package(
@@ -13,7 +12,7 @@ catkin_package(
   CATKIN_DEPENDS roscpp
 #  DEPENDS other non-ROS libs
 )
-SET(OpenCV_DIR /home/kisron/installation/OpenCV-3.4/share/OpenCV/)
+SET(OpenCV_DIR /usr/local/share/OpenCV/)
 include_directories(include ${catkin_INCLUDE_DIRS}) 
 include_directories(${catkin_INCLUDE_DIRS})
 

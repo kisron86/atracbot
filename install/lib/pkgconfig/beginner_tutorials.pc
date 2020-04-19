@@ -1,8 +1,0 @@
-prefix=/home/kisron/catkin_workspace/install
-
-Name: beginner_tutorials
-Description: Description of beginner_tutorials
-Version: 0.1.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 
